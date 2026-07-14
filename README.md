@@ -1,32 +1,68 @@
-
-[cite_start]Aplikasi web Sistem Informasi Perpustakaan ini dibangun untuk memenuhi kriteria tugas **SOAL 2 (Bobot 25%) Ujian Akhir Semester (UAS) Genap Mata Kuliah Pemrograman Web** di **Universitas Dian Nusantara**[cite: 1, 2, 13, 47]. Aplikasi ini menggunakan arsitektur modern berbasis **Node.js (Express.js)** pada backend, **MySQL (XAMPP)** sebagai database relasional, serta **HTML, CSS, dan JavaScript (Fetch API)** di sisi frontend.
+]Aplikasi web Sistem Informasi Perpustakaan ini dibangun untuk memenuhi kriteria tugas **SOAL 2 (Bobot 25%) Ujian Akhir Semester (UAS) Genap Mata Kuliah Pemrograman Web** di **Universitas Dian Nusantara** Aplikasi ini menggunakan arsitektur modern berbasis Node.js (Express.js) pada backend, MySQL (XAMPP) sebagai database relasional serta **HTML, CSS, dan JavaScript (Fetch API)** di sisi frontend
 
 ---
 
 ## 🎯 Fungsi Utama Aplikasi
 
-[cite_start]Berdasarkan studi kasus UAS, perpustakaan kecil di lingkungan kampus sebelumnya masih melakukan pencatatan peminjaman secara konvensional menggunakan buku tulis manual[cite: 47]. [cite_start]Hal tersebut memicu berbagai kendala laten seperti tingginya risiko kehilangan data rekaman historis serta sulitnya melakukan kontrol terhadap keterlambatan pengembalian buku[cite: 47].
+Berdasarkan studi kasus UAS, perpustakaan kecil di lingkungan kampus sebelumnya masih melakukan pencatatan peminjaman secara konvensional menggunakan buku tulis manual[cite: 47]. [cite_start]Hal tersebut memicu berbagai kendala laten seperti tingginya risiko kehilangan data rekaman historis serta sulitnya melakukan kontrol terhadap keterlambatan pengembalian buku[cite: 47].
 
-[cite_start]Aplikasi ini berfungsi sebagai **solusi digital terintegrasi** untuk[cite: 23]:
+Aplikasi ini berfungsi sebagai **solusi digital terintegrasi** untuk:
 1. **Digitalisasi Data**: Menggantikan peran buku tulis fisik menjadi basis data digital terpusat demi menjamin keamanan dan keutuhan data jangka panjang.
 2. **Otomatisasi Status**: Memudahkan pustakawan dalam melacak buku mana saja yang sedang dipinjam atau tersedia secara *real-time*.
-3. [cite_start]**Efisiensi Validasi**: Mempercepat proses pencarian koleksi buku berdasarkan kata kunci judul untuk meningkatkan kenyamanan layanan civitas akademika[cite: 51].
+3. **Efisiensi Validasi**: Mempercepat proses pencarian koleksi buku berdasarkan kata kunci judul untuk meningkatkan kenyamanan layanan civitas akademika.
 
 ---
 
-## 🚀 Fitur Aplikasi (Sesuai Kriteria UAS Soal 2)
+## 🚀 Fitur Aplikasi  
 
-[cite_start]Aplikasi ini diimplementasikan tanpa error dan mencakup seluruh fungsionalitas utama yang dipersyaratkan di dalam rubrik penilaian ujian:
+Aplikasi ini diimplementasikan tanpa error dan mencakup seluruh fungsionalitas utama yang dipersyaratkan di dalam rubrik penilaian ujian:
 
-* [cite_start]**CRUD Data Buku**: Manajemen pengelolaan data pustaka yang meliputi proses penambahan judul baru, pembacaan daftar buku, pembaruan informasi, dan penghapusan data[cite: 51].
-* **Integrasi Gambar (Modul 12)**: Fitur unggah file gambar cover/sampul buku secara fisik ke dalam direktori server (`uploads/`) memanfaatkan middleware `multer`.
-* [cite_start]**CRUD Data Peminjam**: Pencatatan data identitas mahasiswa atau civitas akademika yang berhak melakukan transaksi peminjaman di lingkungan kampus[cite: 51].
-* [cite_start]**Transaksi Peminjaman Buku**: Modul pencatatan peminjaman aktif yang otomatis mengubah status ketersediaan buku menjadi 'Dipinjam'[cite: 51].
-* [cite_start]**Transaksi Pengembalian Buku**: Modul pemrosesan pengembalian buku yang otomatis memulihkan status unit menjadi 'Tersedia'[cite: 51].
-* [cite_start]**Pencarian Buku**: Fitur pencarian cepat berorientasi performa (*real-time filter*) di sisi frontend berdasarkan judul buku[cite: 51].
-* **Dashboard Statistik**: Indikator digital yang mengalkulasi total inventaris buku serta jumlah buku yang siap dipinjam secara dinamis.
+*  Manajemen pengelolaan data pustaka yang meliputi proses penambahan judul baru, pembacaan daftar buku, pembaruan informasi, dan penghapusan data .
+*  Fitur unggah file gambar cover/sampul buku secara fisik ke dalam direktori server (`uploads/`) memanfaatkan middleware `multer`.
+*  Pencatatan data identitas mahasiswa atau civitas akademika yang berhak melakukan transaksi peminjaman di lingkungan kampus .
+*  Modul pencatatan peminjaman aktif yang otomatis mengubah status ketersediaan buku menjadi 'Dipinjam' .
+*  Modul pemrosesan pengembalian buku yang otomatis memulihkan status unit menjadi 'Tersedia' .
+*  Fitur pencarian cepat berorientasi performa (*real-time filter*) di sisi frontend berdasarkan judul buku .
+*  Indikator digital yang mengalkulasi total inventaris buku serta jumlah buku yang siap dipinjam secara dinamis.
 
----
+🛠️ Bagaimana Cara Menjalankan Aplikasi
+Ikuti prosedur langkah demi langkah berikut untuk memasang dan menjalankan aplikasi ini pada komputer lokal Anda:
+
+Langkah 1: Persiapan Basis Data (XAMPP)
+Aktifkan aplikasi XAMPP Control Panel di komputer Anda.
+
+Jalankan (Start) layanan Apache dan MySQL hingga indikator berwarna hijau.
+
+Buka browser internet Anda, kemudian akses alamat http://localhost/phpmyadmin.
+
+Buatlah sebuah database baru bernama db_perpustakaan.
+
+Masuk ke database tersebut, pilih tab Import, lalu unggah berkas db_perpustakaan.sql yang terletak di dalam folder database/ proyek ini, kemudian klik Go/Kirim.
+
+Langkah 2: Instalasi Dependensi Node.js
+Buka aplikasi Terminal atau Command Prompt, lalu arahkan direktori ke folder utama proyek ini (cd perpustakaan-app).
+
+Pasang seluruh pustaka NPM (node packages) yang dipersyaratkan dengan mengetikkan perintah:
+
+Bash
+npm install express mysql2 multer cors
+Pastikan folder bernama uploads/ sudah terbuat di dalam root direktori proyek Anda sebagai wadah penyimpanan file gambar.
+
+Langkah 3: Menjalankan Server Aplikasi
+Di dalam terminal proyek Anda, eksekusi perintah di bawah ini untuk mengaktifkan backend Node.js:
+
+Bash
+node app.js
+Jika koneksi berjalan lancar, terminal akan memunculkan log konfirmasi:
+
+Server running on http://localhost:3000
+
+Langkah 4: Mengakses Antarmuka Web
+Buka web browser Anda (Google Chrome / Mozilla Firefox / Microsoft Edge).
+
+Akses alamat url lokal aplikasi: http://localhost:3000.
+
+Sistem Informasi Manajemen Perpustakaan siap digunakan untuk mengelola data buku dan melakukan simulasi operasional perpustakaan secara digital!
 
 ## 📁 Struktur Folder Proyek
 
