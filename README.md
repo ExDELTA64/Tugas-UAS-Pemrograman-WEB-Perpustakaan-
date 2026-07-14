@@ -1,4 +1,4 @@
-Aplikasi web Sistem Informasi Perpustakaan ini dibangun untuk memenuhi kriteria tugas **SOAL 2 (Bobot 25%) Ujian Akhir Semester (UAS) Genap Mata Kuliah Pemrograman Web** di **Universitas Dian Nusantara** Aplikasi ini menggunakan arsitektur modern berbasis Node.js (Express.js) pada backend, MySQL (XAMPP) sebagai database relasional serta **HTML, CSS, dan JavaScript  di sisi frontend
+Aplikasi web Sistem Informasi Perpustakaan di **Universitas Dian Nusantara** Aplikasi ini menggunakan arsitektur modern berbasis Node.js (Express.js) pada backend, MySQL (XAMPP) sebagai database relasional serta **HTML, CSS, dan JavaScript  di sisi frontend
 
 ---
 
