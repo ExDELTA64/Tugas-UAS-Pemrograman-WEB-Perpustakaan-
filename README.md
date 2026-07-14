@@ -4,7 +4,7 @@ Aplikasi web Sistem Informasi Perpustakaan ini dibangun untuk memenuhi kriteria 
 
 ## 🎯 Fungsi Utama Aplikasi
 
-Berdasarkan studi kasus UAS, perpustakaan kecil di lingkungan kampus sebelumnya masih melakukan pencatatan peminjaman secara konvensional menggunakan buku tulis manual[cite: 47]. [cite_start]Hal tersebut memicu berbagai kendala laten seperti tingginya risiko kehilangan data rekaman historis serta sulitnya melakukan kontrol terhadap keterlambatan pengembalian buku[cite: 47].
+Berdasarkan studi kasus UAS, perpustakaan kecil di lingkungan kampus sebelumnya masih melakukan pencatatan peminjaman secara konvensional menggunakan buku tulis manual Hal tersebut memicu berbagai kendala laten seperti tingginya risiko kehilangan data rekaman historis serta sulitnya melakukan kontrol terhadap keterlambatan pengembalian buku
 
 Aplikasi ini berfungsi sebagai **solusi digital terintegrasi** untuk:
 1. **Digitalisasi Data**: Menggantikan peran buku tulis fisik menjadi basis data digital terpusat demi menjamin keamanan dan keutuhan data jangka panjang.
