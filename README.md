@@ -1,4 +1,4 @@
-Aplikasi web Sistem Informasi Perpustakaan di **Universitas Dian Nusantara** Aplikasi ini menggunakan arsitektur modern berbasis Node.js (Express.js) pada backend, MySQL (XAMPP) sebagai database relasional serta **HTML, CSS, dan JavaScript  di sisi frontend
+Aplikasi web Sistem Informasi Perpustakaan di **Universitas Dian Nusantara** Aplikasi ini menggunakan arsitektur modern berbasis Node.js (Express.js) pada backend, MySQL (XAMPP) sebagai database relasional serta HTML, CSS, dan JavaScript  di sisi frontend
 
 ---
 
