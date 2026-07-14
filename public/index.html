@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistem Informasi Perpustakaan</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Manajemen Perpustakaan Kampus</h1>
+        
+        <div class="form-section">
+            <h2>Tambah / Edit Buku</h2>
+            <form id="bukuForm" enctype="multipart/form-data">
+                <input type="hidden" id="id">
+                
+                <div class="form-group">
+                    <label>Judul Buku</label>
+                    <input type="text" id="judul" placeholder="Masukkan judul buku" required>
+                </div>
+                
+                <div class="form-group">
+                    <label>Pengarang</label>
+                    <input type="text" id="pengarang" placeholder="Masukkan nama pengarang" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Status Buku</label>
+                    <select id="status" required>
+                        <option value="Tersedia">Tersedia</option>
+                        <option value="Dipinjam">Dipinjam</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label>Cover Buku (Gambar)</label>
+                    <input type="file" id="gambar" accept="image/*">
+                </div>
+                
+                <button type="submit" id="btnSimpan">Simpan Data Buku</button>
+            </form>
+        </div>
+
+        <hr>
+
+        <div class="search-section">
+            <h2>Daftar Buku</h2>
+            <input type="text" id="searchInput" placeholder="Cari berdasarkan judul buku..." onkeyup="cariBuku()">
+        </div>
+
+        <div id="dataBuku" class="grid-container"></div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
